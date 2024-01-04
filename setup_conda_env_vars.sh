@@ -31,7 +31,7 @@ if [ "$CONDA_DEFAULT_ENV" = "iitchs_base" ] || [ "${FORCE}" = "true" ]; then
 	
 	#These lines add the python path variables to the script
 	echo "export PYTHONPATH_PRECONDA=\${PYTHONPATH}" > ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh
-	echo "export PYTHONPATH=\${PYTHONPATH}:${SCRIPTDIR}/src/python_stl" >> ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh
+	echo "export PYTHONPATH=\${PYTHONPATH}:${SCRIPTDIR}/src/pytelo" >> ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh
 	echo "export PYTHONPATH=\${PYTHONPATH}:${SCRIPTDIR}/src/lomap" >> ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh
 	echo "export PYTHONPATH=\${PYTHONPATH}:${SCRIPTDIR}/src/catl/catl" >> ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh
 	echo "export PYTHONPATH=\${PYTHONPATH}:${SCRIPTDIR}/src/ltl2dstar-0.5.4/build" >> ${CONDA_PREFIX}/etc/conda/activate.d/env_vars.sh

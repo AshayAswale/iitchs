@@ -16,7 +16,7 @@ import logging
 import pulp
 from catl_planning.write_sol import write_sol
 # from lomap.lomap.classes.timer import Timer
-from python_stl.stl.stl2milp import stl2milp_pulp #TODO: Fix this to just pulp version?
+from pytelo.stl.stl2milp import stl2milp_pulp #TODO: Fix this to just pulp version?
 from catl import *
 from catl2stl import catl2stl
 from catl_planning.visualization import show_environment
